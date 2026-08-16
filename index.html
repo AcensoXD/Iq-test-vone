@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b18">
+
+    <title>V.one — Train Your Mind</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="mainHeader">
+
+        <div class="logo">
+            V.one
+        </div>
+
+        <nav id="mainNav">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('premium')">Premium</button>
+            <button onclick="showPage('login')">Login</button>
+            <button onclick="showPage('signup')">Sign Up</button>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="page active">
+
+            <div class="hero">
+
+                <div class="hero-badge">
+                    🧠 V.one Brain Training
+                </div>
+
+                <h1>
+                    Train Your Mind.
+                    <span>Discover Your Potential.</span>
+                </h1>
+
+                <p>
+                    Test your reasoning, challenge your brain,
+                    track your progress and improve your skills
+                    through fun cognitive games.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="showPage('signup')">
+                        Get Started
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        onclick="showPage('login')">
+                        Login
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURES -->
+
+            <section class="feature-section">
+
+                <h2>Everything in one place</h2>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🧠</div>
+
+                        <h3>IQ Assessment</h3>
+
+                        <p>
+                            Take your first IQ-style assessment
+                            and create your baseline performance profile.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🚀</div>
+
+                        <h3>Boost IQ</h3>
+
+                        <p>
+                            Complete short brain-training sessions
+                            designed around different reasoning skills.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🏋️</div>
+
+                        <h3>Practice Mode</h3>
+
+                        <p>
+                            Practice unlimited questions without
+                            using your Boost IQ sessions.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🌐</div>
+
+                        <h3>Play Online</h3>
+
+                        <p>
+                            Challenge other players in competitive
+                            online brain games.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">📊</div>
+
+                        <h3>IQ Analysis</h3>
+
+                        <p>
+                            See your performance across logic,
+                            memory, patterns, numbers and speed.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card premium-card">
+
+                        <div class="feature-icon">💎</div>
+
+                        <h3>Premium</h3>
+
+                        <p>
+                            Unlock extended training, custom modes,
+                            unlimited games and advanced features.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ================= SIGN UP ================= -->
+
+        <section id="signup" class="page auth-page">
+
+            <div class="auth-box">
+
+                <div class="auth-icon">
+                    🚀
+                </div>
+
+                <h2>Create Your V.one Account</h2>
+
+                <p>
+                    Start your brain-training journey.
+                </p>
+
+
+                <form id="signupForm">
+
+                    <label for="signupUsername">
+                        Username
+                    </label>
+
+                    <input
+                        id="signupUsername"
+                        type="text"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                        required>
+
+
+                    <label for="signupPassword">
+                        Password
+                    </label>
+
+                    <input
+                        id="signupPassword"
+                        type="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        required>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="auth-switch">
+
+                    Already have an account?
+
+                    <button onclick="showPage('login')">
+                        Login
+                    </button>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <section id="login" class="page auth-page">
+
+            <div class="auth-box">
+
+                <div class="auth-icon">
+                    👋
+                </div>
+
+                <h2>Welcome Back</h2>
+
+                <p>
+                    Login to continue your V.one journey.
+                </p>
+
+
+                <form id="loginForm">
+
+                    <label for="loginUsername">
+                        Username
+                    </label>
+
+                    <input
+                        id="loginUsername"
+                        type="text"
+                        placeholder="Enter your username"
+                        autocomplete="username"
+                        required>
+
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        id="loginPassword"
+                        type="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <p class="auth-switch">
+
+                    Don't have an account?
+
+                    <button onclick="showPage('signup')">
+                        Sign Up
+                    </button>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FIRST IQ TEST ================= -->
+
+        <section id="iqTest" class="page test-page">
+
+            <div class="test-container">
+
+                <div class="test-header">
+
+                    <div>
+                        <span>V.one</span>
+                        <h2>First IQ Assessment</h2>
+                    </div>
+
+                    <div class="timer">
+                        <span>⏱️</span>
+                        <strong id="testTimer">45</strong>s
+                    </div>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div
+                        id="testProgress"
+                        class="progress-bar">
+                    </div>
+
+                </div>
+
+
+                <p class="question-count">
+                    Question
+                    <span id="questionNumber">1</span>
+                    of
+                    <span id="totalQuestions">15</span>
+                </p>
+
+
+                <div class="question-card">
+
+                    <div
+                        id="questionCategory"
+                        class="question-category">
+                        LOGIC
+                    </div>
+
+                    <h2 id="questionText">
+                        Question will appear here.
+                    </h2>
+
+
+                    <div
+                        id="answerOptions"
+                        class="answer-options">
+
+                        <!-- JavaScript will add answers here -->
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="nextQuestionBtn"
+                    class="primary-btn"
+                    disabled>
+                    Next →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IQ RESULT ================= -->
+
+        <section id="iqResult" class="page result-page">
+
+            <div class="result-container">
+
+                <div class="result-icon">
+                    🧠
+                </div>
+
+                <p class="result-label">
+                    YOUR BASELINE
+                </p>
+
+                <h1 id="iqScore">
+                    0
+                </h1>
+
+                <p>
+                    IQ-style game score
+                </p>
+
+
+                <div class="analysis-grid">
+
+                    <div class="analysis-card">
+                        <span>🧩</span>
+                        <h3>Logic</h3>
+                        <strong id="logicScore">0%</strong>
+                    </div>
+
+                    <div class="analysis-card">
+                        <span>🔢</span>
+                        <h3>Numbers</h3>
+                        <strong id="numberScore">0%</strong>
+                    </div>
+
+                    <div class="analysis-card">
+                        <span>🔷</span>
+                        <h3>Patterns</h3>
+                        <strong id="patternScore">0%</strong>
+                    </div>
+
+                    <div class="analysis-card">
+                        <span>⚡</span>
+                        <h3>Speed</h3>
+                        <strong id="speedScore">0%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="result-message">
+
+                    <h2>Your V.one journey begins here.</h2>
+
+                    <p id="resultDescription">
+                        Your results will be analyzed here.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="primary-btn"
+                    onclick="showPage('dashboard')">
+                    Continue to V.one →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="page dashboard-page">
+
+            <div class="dashboard-container">
+
+                <div class="dashboard-welcome">
+
+                    <div>
+
+                        <p>WELCOME BACK</p>
+
+                        <h1>
+                            Hello,
+                            <span id="dashboardUsername">
+                                Player
+                            </span> 👋
+                        </h1>
+
+                    </div>
+
+                    <div class="level-card">
+
+                        <span>⭐ Level</span>
+
+                        <strong id="playerLevel">
+                            1
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <span>🧠</span>
+
+                        <p>Baseline</p>
+
+                        <strong id="dashboardIQ">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>⚡</span>
+
+                        <p>XP</p>
+
+                        <strong id="playerXP">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>🔥</span>
+
+                        <p>Streak</p>
+
+                        <strong id="playerStreak">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>🏆</span>
+
+                        <p>Best Score</p>
+
+                        <strong id="bestScore">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GAME MODES -->
+
+                <h2 class="section-title">
+                    Play & Train
+                </h2>
+
+
+                <div class="mode-grid">
+
+                    <article class="mode-card boost-mode">
+
+                        <div class="mode-icon">
+                            🚀
+                        </div>
+
+                        <h2>Boost IQ</h2>
+
+                        <p>
+                            10 questions per session.
+                        </p>
+
+                        <div class="mode-limit">
+                            Free: <strong>10 sessions / 4 hrs</strong>
+                        </div>
+
+                        <button
+                            class="primary-btn"
+                            onclick="showPage('boost')">
+                            Start Boost
+                        </button>
+
+                    </article>
+
+
+                    <article class="mode-card">
+
+                        <div class="mode-icon">
+                            🏋️
+                        </div>
+
+                        <h2>Practice</h2>
+
+                        <p>
+                            Unlimited practice mode.
+                        </p>
+
+                        <div class="mode-limit">
+                            Unlimited
+                        </div>
+
+                        <button
+                            class="secondary-btn"
+                            onclick="showPage('practice')">
+                            Practice
+                        </button>
+
+                    </article>
+
+
+                    <article class="mode-card">
+
+                        <div class="mode-icon">
+                            🌐
+                        </div>
+
+                        <h2>Play Online</h2>
+
+                        <p>
+                            Compete with other players.
+                        </p>
+
+                        <div class="mode-limit">
+                            Free: <strong>5 games / 4 hrs</strong>
+                        </div>
+
+                        <button
+                            class="secondary-btn"
+                            onclick="showPage('online')">
+                            Play Online
+                        </button>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ANALYSIS -->
+
+                <h2 class="section-title">
+                    Your Analysis
+                </h2>
+
+                <div class="analysis-panel">
+
+                    <div>
+                        <span>🧩 Logic</span>
+                        <div class="skill-bar">
+                            <div id="logicBar"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>🔢 Numbers</span>
+                        <div class="skill-bar">
+                            <div id="numberBar"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>🔷 Patterns</span>
+                        <div class="skill-bar">
+                            <div id="patternBar"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>⚡ Speed</span>
+                        <div class="skill-bar">
+                            <div id="speedBar"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- PREMIUM -->
+
+                <div class="premium-banner">
+
+                    <div>
+
+                        <span class="premium-label">
+                            💎 V.ONE PREMIUM
+                        </span>
+
+                        <h2>
+                            Unlock your full V.one experience.
+                        </h2>
+
+                        <p>
+                            Extended Boost, custom training,
+                            unlimited online play, advanced
+                            analysis and more.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        onclick="showPage('premium')">
+                        Explore Premium
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+                    Log Out
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOOST IQ ================= -->
+
+        <section id="boost" class="page mode-page">
+
+            <div class="mode-container">
+
+                <div class="mode-page-icon">
+                    🚀
+                </div>
+
+                <h1>Boost IQ</h1>
+
+                <p>
+                    Train your reasoning with a
+                    10-question challenge.
+                </p>
+
+                <div class="limit-box">
+
+                    <strong>10</strong>
+
+                    <span>
+                        questions per session
+                    </span>
+
+                    <small>
+                        Free limit: 10 sessions every 4 hours
+                    </small>
+
+                </div>
+
+                <button
+                    class="primary-btn"
+                    onclick="startBoost()">
+                    Start 10 Questions
+                </button>
+
+                <button
+                    class="back-btn"
+                    onclick="showPage('dashboard')">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRACTICE ================= -->
+
+        <section id="practice" class="page mode-page">
+
+            <div class="mode-container">
+
+                <div class="mode-page-icon">
+                    🏋️
+                </div>
+
+                <h1>Practice Mode</h1>
+
+                <p>
+                    Practice unlimited questions
+                    at your own pace.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="startPractice()">
+                    Start Practice
+                </button>
+
+                <button
+                    class="back-btn"
+                    onclick="showPage('dashboard')">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ONLINE ================= -->
+
+        <section id="online" class="page mode-page">
+
+            <div class="mode-container">
+
+                <div class="mode-page-icon">
+                    🌐
+                </div>
+
+                <h1>Play Online</h1>
+
+                <p>
+                    Challenge other players in
+                    competitive brain games.
+                </p>
+
+                <div class="limit-box">
+
+                    <strong>5</strong>
+
+                    <span>
+                        games every 4 hours
+                    </span>
+
+                </div>
+
+                <button
+                    class="primary-btn"
+                    onclick="startOnline()">
+                    Find Match
+                </button>
+
+                <button
+                    class="back-btn"
+                    onclick="showPage('dashboard')">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREMIUM ================= -->
+
+        <section id="premium" class="page premium-page">
+
+            <div class="premium-container">
+
+                <div class="premium-icon">
+                    💎
+                </div>
+
+                <p class="premium-label">
+                    V.ONE PREMIUM
+                </p>
+
+                <h1>
+                    Unlock More.
+                    <span>Train Without Limits.</span>
+                </h1>
+
+                <p>
+                    Get the complete V.one experience.
+                </p>
+
+
+                <div class="premium-grid">
+
+                    <div>
+                        🚀
+                        <strong>Unlimited Boost</strong>
+                        <span>No session limits</span>
+                    </div>
+
+                    <div>
+                        🔢
+                        <strong>25 Questions</strong>
+                        <span>Extended Boost mode</span>
+                    </div>
+
+                    <div>
+                        ⚙️
+                        <strong>Custom Training</strong>
+                        <span>Choose your settings</span>
+                    </div>
+
+                    <div>
+                        🌐
+                        <strong>Unlimited Online</strong>
+                        <span>Play without limits</span>
+                    </div>
+
+                    <div>
+                        📊
+                        <strong>Advanced Analysis</strong>
+                        <span>More detailed statistics</span>
+                    </div>
+
+                    <div>
+                        🎨
+                        <strong>More Themes</strong>
+                        <span>Light, dark and more</span>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-btn premium-button"
+                    onclick="startPremium()">
+                    Upgrade to Premium
+                </button>
+
+
+                <p class="premium-note">
+                    Premium payments will be connected
+                    in a later version.
+                </p>
+
+
+                <button
+                    class="back-btn"
+                    onclick="showPage('dashboard')">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="page about-page">
+
+            <div class="about-container">
+
+                <div class="about-icon">
+                    🧠
+                </div>
+
+                <h1>What is V.one?</h1>
+
+                <p>
+                    V.one is a brain-training platform built
+                    around IQ-style assessments, cognitive
+                    games, practice and competitive challenges.
+                </p>
+
+                <p>
+                    Your first assessment creates a baseline
+                    performance profile. From there, V.one
+                    gives you different ways to train and
+                    track your progress.
+                </p>
+
+                <div class="about-note">
+
+                    <strong>Important</strong>
+
+                    <p>
+                        V.one provides an IQ-style game score
+                        for entertainment and training.
+                        It is not a clinically validated IQ test.
+                    </p>
+
+                </div>
+
+                <button
+                    class="primary-btn"
+                    onclick="showPage('home')">
+                    ← Back Home
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="logo">
+            V<span>.one</span>
+        </div>
+
+        <p>
+            Train your mind. Discover your potential.
+        </p>
+
+        <p>
+            © 2026 V.one
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT FILE ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
